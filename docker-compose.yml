@@ -21,7 +21,7 @@ services:
     networks:
       - demo-grid-net
   testsexecution:
-     image: "nikhildocker1986/demoproject:111
+     image: nikhildocker1986/demoproject:112
      depends_on:
         - chrome
         - hub
