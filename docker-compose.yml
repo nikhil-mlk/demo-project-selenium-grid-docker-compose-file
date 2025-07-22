@@ -21,10 +21,12 @@ services:
     networks:
       - demo-grid-net
   testsexecution:
-     image: nikhildocker1986/demoproject:131
+     image: nikhildocker1986/demoproject:132
      depends_on:
         - chrome
         - hub
+     volumes:
+       - /home/ubuntu/app/output:/demo-docker-project-directory/output
      networks:
        - demo-grid-net
 networks:
